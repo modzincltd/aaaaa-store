@@ -1,9 +1,12 @@
+const { default: next } = require("next");
+const {nextui} = require("@nextui-org/react");
 module.exports = {
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx}",
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/modules/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -24,7 +27,7 @@ module.exports = {
         "2xlarge": "1920px",
       },
       fontFamily: {
-        sans: [
+        sans: [ 
           "Inter",
           "-apple-system",
           "BlinkMacSystemFont",
@@ -37,5 +40,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [nextui()],
 }

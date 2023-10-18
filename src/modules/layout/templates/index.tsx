@@ -1,15 +1,17 @@
 import Footer from "@modules/layout/templates/footer"
 import Nav from "@modules/layout/templates/nav"
 import React from "react"
+import {NextUIProvider} from "@nextui-org/react";
 
 const Layout: React.FC = ({ children }) => {
   return (
-    <div>
+    <NextUIProvider>
       <Nav />
-      <main className="relative">{children}</main>
+          <main className="relative">{children}</main>
       
       <Footer />
-    </div>
+    </NextUIProvider>
+
   )
 }
 

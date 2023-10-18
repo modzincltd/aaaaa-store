@@ -6,7 +6,7 @@ export type ProductHit = {
   id: string
   title: string
   handle: string
-  description: string | null
+  //description: string | null
   thumbnail: string | null
   variants: ProductVariant[]
   collection_handle: string | null

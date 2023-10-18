@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${product.title} | Acme Store`,
+    title: `${product.title} | AA FENCING | SECURITY FENCING`,
     description: `${product.title}`,
     openGraph: {
       title: `${product.title} | Acme Store`,
