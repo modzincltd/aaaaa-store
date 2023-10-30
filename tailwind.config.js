@@ -7,6 +7,10 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/modules/**/*.{js,ts,jsx,tsx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite/**/*.js",
+    "./node_modules/flowbite-react/**/*.js",
+    "./pages/**/*.{ts,tsx}",
+    "./public/**/*.html",
   ],
   theme: {
     extend: {
@@ -40,5 +44,7 @@ module.exports = {
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 }
